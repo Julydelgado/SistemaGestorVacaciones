@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #162938;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transform-origin: right;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+    
+}
+
+.navigation .btnLogin-poput{
+    width: 130px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.etiqueta-añadiremp{
+    width: 130px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+
+.navigation .btnLogin-poput:hover{
+    background-color: #fff;
+    color: #162938;
+}
+
+.wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur("20px");
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box{
+    width: 100px;
+    padding: 40px;
+}
+
+
+.centrar-enlace{
+    display: flex; /* Activa el modo flexbox */
+     /* Espacia los elementos */
+    font-size: .9em;
+    color:#162938;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+
+.centrar-enlace p{
+    display: flex; /* Activa el modo flexbox */
+    justify-content: space-between; /* Espacia los elementos */
+    align-items: center; /* Alinea verticalmente en el centro (opcional) */
+    padding: 10px; /* Opcional, para agregar un margen interno */
+    background-color: #f3f3f3; /* Opcional, color de fondo */
+}
+
+.centrar-enlace a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+
+.btn-modificar {
+    color:#162938; 
+    font-size: 24px; /* Tamaño del ícono */
+    margin-right: 10px; /* Margen derecho para separar del ícono "Eliminar" */
+}
+
+.btn-eliminar {
+    color: red; 
+    font-size: 24px; 
+}
+
+/*p h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}*/
